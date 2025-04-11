@@ -1,4 +1,6 @@
 # E-commerce-Database-management
+![intro](https://github.com/Abhishekshaw2002/E-commerce-Database-management/blob/ed49ddaf847e0dc9354f9af7999dd7bdd2b087e1/Img%20Used/e%20commerce.webp)
+
 # Problem Statement:
 The primary challenge is to design and implement a robust e-commerce platform that offers a seamless and secure online shopping experience. This includes efficient product browsing, user-friendly interfaces, secure payment processing, and reliable order fulfillment. The system must also manage extensive data related to products, users, orders, and transactions effectively.
 
