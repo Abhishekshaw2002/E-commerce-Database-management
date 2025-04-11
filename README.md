@@ -23,10 +23,6 @@ Shopping cart and checkout processes.​
 Order management and tracking.​
 Administrative interfaces for inventory and user management.​
 
-# conceptual diagram:
-
-
-
 # Components of the Project:
 User Module: Manages user profiles and authentication.​
 Product Module: Handles product listings, categories, and details.​
@@ -35,7 +31,7 @@ Order Module: Processes orders, payments, and shipping details.​
 
 
 # ER Diagram:
-
+![intro](https://github.com/Abhishekshaw2002/E-commerce-Database-management/blob/04447ecf67449035677b6f5e0c9e37185ada12af/Img%20Used/ER%20diagram.png)
 
 # Key SQL queries include:
 1: Retrieve all Products by Sales:
@@ -51,7 +47,7 @@ GROUP BY
     P.ProductName
 ORDER BY 
     TotalRevenue DESC;
-
+![intro](https://github.com/Abhishekshaw2002/E-commerce-Database-management/blob/04447ecf67449035677b6f5e0c9e37185ada12af/Img%20Used/all%20product%20by%20sales.png)
 
   2: Find Orders with Returns and Their Status
 SELECT 
@@ -69,7 +65,7 @@ JOIN
     Products P ON R.ProductID = P.ProductID
 JOIN 
     Users U ON O.UserID = U.UserID;
-
+![intro](https://github.com/Abhishekshaw2002/E-commerce-Database-management/blob/04447ecf67449035677b6f5e0c9e37185ada12af/Img%20Used/order%20return%20with%20their%20status.png)
 
 3: Average Rating of Each Product
 SELECT 
@@ -84,7 +80,7 @@ GROUP BY
     P.ProductName
 ORDER BY 
     AverageRating DESC;
-
+![intro](https://github.com/Abhishekshaw2002/E-commerce-Database-management/blob/04447ecf67449035677b6f5e0c9e37185ada12af/Img%20Used/avg%20rating%20of%20product.png)
 
  4: User Cart Details
 SELECT 
@@ -103,7 +99,7 @@ JOIN
     Products P ON CI.ProductID = P.ProductID
 ORDER BY 
     U.UserName;
-
+![intro](https://github.com/Abhishekshaw2002/E-commerce-Database-management/blob/04447ecf67449035677b6f5e0c9e37185ada12af/Img%20Used/user%20cart%20details.png)
 
 5: Monthly Sales Revenue
 SELECT 
@@ -117,7 +113,7 @@ GROUP BY
     DATE_FORMAT(O.OrderDate, '%Y-%m')
 ORDER BY 
     Month DESC;
-
+![intro](https://github.com/Abhishekshaw2002/E-commerce-Database-management/blob/04447ecf67449035677b6f5e0c9e37185ada12af/Img%20Used/monthly%20total%20revenue.png)
 
 6: Identify Users with the Most Returns
 SELECT 
@@ -133,7 +129,7 @@ GROUP BY
     U.UserID, U.UserName, U.Email
 ORDER BY 
     TotalReturns DESC, TotalRefunded DESC
-LIMIT 5;
+![intro](https://github.com/Abhishekshaw2002/E-commerce-Database-management/blob/04447ecf67449035677b6f5e0c9e37185ada12af/Img%20Used/most%20return%20items.png)
 
 
 # Challenges Faced in the Project:
